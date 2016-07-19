@@ -40,7 +40,11 @@ namespace ProgramOp
                 {
                     valorValido = true;
                     sinal = Convert.ToChar(Console.ReadLine());
-                    if (sinal.CompareTo('+') != 0 && sinal.CompareTo('c') != 0)
+                    if (sinal.CompareTo('+') != 0 && 
+                        sinal.CompareTo('-') != 0 &&
+                        sinal.CompareTo('*') != 0 &&
+                        sinal.CompareTo('/') != 0 &&
+                        sinal.CompareTo('r') != 0 )
                     {
                         throw new OperacaoException();
                     }

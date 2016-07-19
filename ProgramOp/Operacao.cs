@@ -31,6 +31,21 @@ namespace ProgramOp
                         somar();
                         break;
                     }
+                case '-':
+                    {
+                        subtrair();
+                        break;
+                    }
+                case '*':
+                    {
+                        multiplicar();
+                        break;
+                    }
+                case '/':
+                    {
+                        dividir();
+                        break;
+                    }
                 case 'r':
                     {
                         converterParaAreaDoCirculo();
@@ -42,6 +57,21 @@ namespace ProgramOp
         public Decimal somar()
         {
            return this.resultado = valor1 + valor2;
+        }
+
+        public Decimal subtrair()
+        {
+            return this.resultado = valor1 - valor2;
+        }
+
+        public Decimal multiplicar()
+        {
+            return this.resultado = valor1 * valor2;
+        }
+
+        public Decimal dividir()
+        {
+            return this.resultado = valor1 / valor2;
         }
 
         //Converte o valor1 para o valor da area do circulo
