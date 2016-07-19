@@ -31,9 +31,9 @@ namespace ProgramOp
                         somar();
                         break;
                     }
-                case 'c':
+                case 'r':
                     {
-                        converter();
+                        converterParaAreaDoCirculo();
                         break;
                     }
             }
@@ -44,8 +44,8 @@ namespace ProgramOp
            return this.resultado = valor1 + valor2;
         }
 
-        //Converte o valor r para o valor da area do circulo
-        public void converter()
+        //Converte o valor1 para o valor da area do circulo
+        public void converterParaAreaDoCirculo()
         {
             this.resultado = Convert.ToDecimal(pi * Convert.ToDouble(valor1) * Convert.ToDouble(valor1));
         }
